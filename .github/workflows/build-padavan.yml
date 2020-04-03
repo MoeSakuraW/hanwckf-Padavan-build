@@ -33,7 +33,7 @@ jobs:
       run: |
         sudo git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
-        sudo ./dl_toolchain.sh
+        sh dl_toolchain.sh
         sudo mkdir -p /opt/images/
     - name: Build Firmware
       env:
